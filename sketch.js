@@ -5,11 +5,6 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 var ball, groundObj,leftSide,rightSide;
 
-function preload()
-{
-	
-}
-
 function setup() {
 
 var ball_options={
