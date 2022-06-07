@@ -4,9 +4,6 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 var ball;
-var chaozinho;
-var paredinha;
-var paredinhagemea;
 
 function preload()
 {
