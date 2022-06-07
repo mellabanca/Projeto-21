@@ -3,7 +3,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-var ball;
+var ball, groundObj,leftSide,rightSide;
 
 function preload()
 {
@@ -26,9 +26,13 @@ var ball_options={
 	world = engine.world;
 
 	//Create the Bodies Here.
-ball=Bodies.circle(260,100,20,ball_options);
-World.add(world,ball);
-
+	ball=Bodies.circle(260,100,20,ball_options);
+	World.add(world,ball);
+	
+	groundObj=new Ground(width/2,670,width,20);
+	leftSide = new Ground(1100,600,20,120);
+	rightSide = new Ground(1350,600,20,120);
+	
 	Engine.run(engine);
 
 }
